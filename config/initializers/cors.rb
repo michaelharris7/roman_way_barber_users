@@ -9,14 +9,15 @@
 # Rails.application.config.middleware.insert_before 0, Rack::Cors do
 Rails.application.config.middleware.use Rack::Cors do
   allow do
-    origins 'https://romanway-barber-frontend.herokuapp.com', 'http://localhost:4200'
+    origins '*'
 
+# 'https://romanway-barber-frontend.herokuapp.com', 'http://localhost:4200'
     # , 'localhost:4200'
     # 'https://romanway-barber-users.herokuapp.com', 'http://localhost:3000'
 
     resource '*',
       headers: :any,
       expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'],
-      methods: [:get, :post, :options, :delete, :put, :head]
+      methods: [:get, :post, :options, :delete, :put]
   end
 end
