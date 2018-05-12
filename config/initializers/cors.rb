@@ -5,7 +5,9 @@
 
 # Read more: https://github.com/cyu/rack-cors
 
-Rails.application.config.middleware.insert_before 0, Rack::Cors do
+# config.middleware.use Rack::Cors do
+# Rails.application.config.middleware.insert_before 0, Rack::Cors do
+Rails.application.config.middleware.use Rack::Cors do
   allow do
     origins 'https://romanway-barber-frontend.herokuapp.com', 'http://localhost:4200'
 
@@ -14,7 +16,7 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
 
     resource '*',
       headers: :any,
-      expose: ['access-token', 'expiry', 'token-type', 'uid', 'client', 'userType'],
-      methods: [:get, :post, :put, :patch, :delete, :options, :head]
+      expose: ['access-token', 'expiry', 'token-type', 'uid', 'client'],
+      methods: [:get, :post, :options, :delete, :put]
   end
 end
