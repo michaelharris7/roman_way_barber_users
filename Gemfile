@@ -8,6 +8,7 @@ end
 gem 'rails', '~> 5.1.6'
 gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
+gem 'rack-cors'
 
 group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
@@ -26,7 +27,6 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'dotenv-rails', '~> 2.4'
 gem 'devise_token_auth', '~> 0.1.43'
-gem 'omniauth', '~> 1.8', '>= 1.8.1'
-gem 'rack-cors'
+# gem 'omniauth', '~> 1.8', '>= 1.8.1'
 
 ruby "2.4.1"
