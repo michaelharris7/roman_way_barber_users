@@ -17,9 +17,9 @@ This is a Ruby on Rails microservicing app used for managing the users related t
 - Multi-user types
 
 ### TODOs:
-- Integrate API connections with front-end app
+- [x] Integrate API connections with front-end app
 
 ### Project Requirements:
-- Angular front-end app
-- Rails API implementation
-[x] Use Github for version control
+- [x] Angular front-end app
+- [x] Rails API implementation
+- [x] Use Github for version control
