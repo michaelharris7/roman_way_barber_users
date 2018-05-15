@@ -2,7 +2,7 @@
 
 This is a Ruby on Rails microservicing app used for managing the users related to my devCamp capstone project front-end app on the repository, roman-way-barber-fe, for the Evan's Roman Way Barber / Stylist business.
 
-* Ruby version - 2.4.1p111
+* Ruby version - 2.4.1
 * Rails version - 5.1.6
 * Database creation - Postgres
 
