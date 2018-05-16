@@ -17,5 +17,5 @@ Rails.application.configure do
   config.active_support.deprecation = :log
   config.active_record.migration_error = :page_load
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'localhost', port: 3003 }
 end
