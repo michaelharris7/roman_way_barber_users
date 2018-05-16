@@ -18,4 +18,5 @@ Rails.application.configure do
   config.active_record.migration_error = :page_load
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   config.action_mailer.default_url_options = { host: 'localhost', port: 3003 }
+  config.action_mailer.perform_deliveries = true
 end
