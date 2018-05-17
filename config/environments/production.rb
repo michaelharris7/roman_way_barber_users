@@ -81,4 +81,12 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
   config.action_mailer.default_url_options = { :host => 'romanway-barber-users.herokuapp.com' }
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => ENV.fetch('ACTION_MAILER_ADDRESS'),
+    :port                 => 587,
+    :user_name            => ENV.fetch('ACTION_MAILER_EMAIL'),
+    :password             => ENV.fetch('ACTION_MAILER_PASSWORD'),
+    :authentication       => :login,
+    :enable_starttls_auto => true  }
 end
